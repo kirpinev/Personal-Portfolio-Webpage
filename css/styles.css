@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #e0ebe8;
+  padding: 16px;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  margin-top: 64px;
+}
+
+h3 {
+  color: #008080;
+  font-weight: 500;
+  margin: 14px;
+}
+
+p {
+  font-size: 18px;
+  color: green;
+  padding: 16px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #008080;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+#welcome-section {
+  background-color: #e0ebe8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  text-align: center;
+  margin: 32px 64px;
+  border: 2px solid lightblue;
+  width: 300px;
+}
+
+.project-img {
+  border-bottom: 2px solid lightblue;
+}
+
+.show-all {
+  text-align: center;
+  background-color: #e0ebe8;
+  width: 180px;
+  height: 60px;
+  margin: 0 150px 32px 150px;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.show-all:hover {
+  background-color: lightblue;
+}
+
+#profile {
+  padding: 80px 16px 80px 16px;
+  background-color: #c8f7c5;
+  text-align: center;
+}
+
+.flex-profile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+
+.profile-site {
+  background-color: #e0ebe8;
+  border: 2px solid green;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+
+footer {
+  background-color: #22313f;
+  padding: 16px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: flex-end;
+  }
+  nav a {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
