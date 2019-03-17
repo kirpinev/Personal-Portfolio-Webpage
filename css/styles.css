@@ -1,3 +1,5 @@
+/* Global styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,34 +11,29 @@ body {
   line-height: 1.6;
 }
 
-nav {
-  background-color: #e0ebe8;
-  padding: 16px;
-  text-align: center;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  width: 100%;
-}
-
 img {
   display: block;
   width: 100%;
   height: 150px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
+header {
+  margin-bottom: 32px;
+}
+
 h2 {
-  margin-top: 64px;
+  color: #008080;
 }
 
 h3 {
   color: #008080;
-  font-weight: 500;
+  font-size: 16px;
   margin: 14px;
 }
 
@@ -49,8 +46,28 @@ p {
 a {
   text-decoration: none;
   color: #008080;
-  padding: 0 15px;
-  font-weight: 500;
+}
+
+footer {
+  background-color: #22313f;
+  padding: 50px 16px;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
+
+/* ID styles */
+
+#navbar {
+  background-color: #e0ebe8;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 #welcome-section {
@@ -64,6 +81,11 @@ a {
 }
 
 #projects {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.flex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -85,7 +107,7 @@ a {
   background-color: #e0ebe8;
   width: 180px;
   height: 60px;
-  margin: 0 150px 32px 150px;
+  margin: 32px 150px;
   border: 2px solid green;
   border-radius: 5px;
 }
@@ -95,15 +117,9 @@ a {
 }
 
 #profile {
-  padding: 80px 16px 80px 16px;
+  padding: 100px 0;
   background-color: #c8f7c5;
   text-align: center;
-}
-
-.flex-profile {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .flex-projects {
@@ -115,7 +131,7 @@ a {
   margin: 20px;
 }
 
-.profile-site {
+.contact {
   background-color: #e0ebe8;
   border: 2px solid green;
   border-radius: 100%;
@@ -127,21 +143,11 @@ a {
   margin: 20px;
 }
 
-footer {
-  background-color: #22313f;
-  padding: 16px;
-  text-align: center;
-}
-
-footer p {
-  color: white;
-}
-
 @media (min-width: 768px) {
-  nav {
+  #navbar {
     justify-content: flex-end;
   }
-  nav a {
+  #navbar a {
     padding-right: 50px;
     padding-left: 50px;
   }
