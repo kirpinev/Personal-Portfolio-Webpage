@@ -11,30 +11,22 @@ body {
   line-height: 1.6;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: 150px;
-}
-
 h1,
 h2,
 h3 {
   font-weight: 400;
 }
 
-header {
-  margin-bottom: 32px;
-}
-
-h2 {
+h2,
+h3,
+a {
   color: #008080;
 }
 
 h3 {
-  color: #008080;
   font-size: 16px;
-  margin: 14px;
+  padding: 16px;
+  border-top: 2px solid lightblue;
 }
 
 p {
@@ -45,11 +37,19 @@ p {
 
 a {
   text-decoration: none;
-  color: #008080;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+span {
+  color: black;
 }
 
 footer {
-  background-color: #22313f;
   padding: 50px 16px;
   text-align: center;
 }
@@ -61,34 +61,16 @@ footer p {
 /* ID styles */
 
 #navbar {
-  background-color: #e0ebe8;
   padding: 16px;
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
   justify-content: space-around;
 }
 
 #welcome-section {
-  background-color: #e0ebe8;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 100vh;
-}
-
-#projects {
-  text-align: center;
-  padding: 100px 0;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .project-tile {
@@ -98,13 +80,8 @@ footer p {
   width: 300px;
 }
 
-.project-img {
-  border-bottom: 2px solid lightblue;
-}
-
 .show-all {
   text-align: center;
-  background-color: #e0ebe8;
   width: 180px;
   height: 60px;
   margin: 32px 150px;
@@ -116,31 +93,36 @@ footer p {
   background-color: lightblue;
 }
 
-#profile {
+.contact {
+  border: 2px solid green;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.p-n-t {
   padding: 100px 0;
-  background-color: #c8f7c5;
   text-align: center;
 }
 
-.flex-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  margin: 20px;
+.tranquil {
+  background-color: #e0ebe8;
 }
 
-.contact {
-  background-color: #e0ebe8;
-  border: 2px solid green;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  margin: 20px;
+.snowy-mint {
+  background-color: #c8f7c5;
+}
+
+.midnight {
+  background-color: #22313f;
 }
 
 @media (min-width: 768px) {
