@@ -73,6 +73,8 @@ footer p {
   height: 100vh;
 }
 
+/* Class styles */
+
 .project-tile {
   text-align: center;
   margin: 32px 64px;
@@ -125,7 +127,9 @@ footer p {
   background-color: #22313f;
 }
 
-@media (min-width: 768px) {
+/* Media styles */
+
+@media (min-width: 769px) {
   #navbar {
     justify-content: flex-end;
   }
